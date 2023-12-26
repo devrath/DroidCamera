@@ -12,7 +12,7 @@ android {
 
 dependencies {
     coreDependencies()
-
+    compose()
     featureCaptureImage()
     featureRecordVideo()
 }

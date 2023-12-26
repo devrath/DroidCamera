@@ -1,6 +1,6 @@
 package com.istudio.core_navigation
 
-sealed class NavigationRoute(val rout: String) {
-     object  CaptureImage : NavigationRoute("CaptureImage")
-     object  RecordVideo : NavigationRoute("RecordVideo")
+sealed class NavigationRoute(val route: String) {
+     object CaptureImage : NavigationRoute(route = "CaptureImage")
+     object  RecordVideo : NavigationRoute(route = "RecordVideo")
 }
