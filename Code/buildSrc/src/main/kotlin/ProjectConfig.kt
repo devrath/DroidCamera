@@ -14,7 +14,7 @@ object ProjectConfig {
 
     // <---------> Namespaces <--------->
     const val appId = "com.istudio.snapvision"
-    const val core = "com.istudio.snapvision"
+    const val featureCamera = "com.istudio.feature_camera"
     //const val coreUi = "com.istudio.core_ui"
     // <---------> Namespaces <--------->
 

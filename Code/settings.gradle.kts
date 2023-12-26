@@ -15,3 +15,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "SnapVision"
 include(":app")
+include(":app-features")
+include(":app-features:feature-camera")

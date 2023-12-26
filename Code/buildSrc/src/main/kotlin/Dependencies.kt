@@ -1,6 +1,7 @@
 import Dependencies.coreSplash
 import Dependencies.hiltNavigationCompose
 import org.gradle.api.artifacts.dsl.DependencyHandler
+import org.gradle.kotlin.dsl.project
 
 object Dependencies {
     // Specific module links
@@ -345,5 +346,5 @@ fun DependencyHandler.currencyResultFeature() {
 
 
 // <------------------------ Project Modules ------------------------>
-//fun DependencyHandler.appNetworkModule() { implementation(project(":app-core:data:network")) }
+fun DependencyHandler.featureCamera() { implementation(project(":app-features:feature-camera")) }
 // <------------------------ Project Modules ------------------------>
