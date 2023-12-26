@@ -55,7 +55,8 @@ android {
 dependencies {
     appModuleDependencies()
 
-    featureCamera()
+    featureCaptureImage()
+    featureRecordVideo()
     coreUi()
     coreCommon()
     coreModels()

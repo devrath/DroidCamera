@@ -7,7 +7,7 @@ plugins {
 apply<plugins.FeaturesGradlePlugin>()
 
 android {
-    namespace = ProjectConfig.featureCamera
+    namespace = ProjectConfig.featureRecordVideo
     kotlinOptions { ProjectConfig.jvmTarget }
     testOptions {
         unitTests.isReturnDefaultValues = true
