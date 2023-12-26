@@ -16,8 +16,8 @@ dependencyResolutionManagement {
 rootProject.name = "SnapVision"
 include(":app")
 include(":app-features")
-include(":app-features:feature-camera")
+include(":app-features:feature_capture_image")
 include(":app-core")
-include(":app-core:core-ui")
-include(":app-core:core-common")
-include(":app-core:core-models")
+include(":app-core:core_ui")
+include(":app-core:core_common")
+include(":app-core:core_models")

@@ -253,8 +253,8 @@ fun DependencyHandler.common() {
 
 
 // <------------------------ Project Modules ------------------------>
-fun DependencyHandler.featureCamera() { implementation(project(":app-features:feature-camera")) }
-fun DependencyHandler.coreUi() { implementation(project(":app-core:core-ui")) }
-fun DependencyHandler.coreCommon() { implementation(project(":app-core:core-common")) }
-fun DependencyHandler.coreModels() { implementation(project(":app-core:core-models")) }
+fun DependencyHandler.featureCamera() { implementation(project(":app-features:feature_capture_image")) }
+fun DependencyHandler.coreUi() { implementation(project(":app-core:core_ui")) }
+fun DependencyHandler.coreCommon() { implementation(project(":app-core:core_common")) }
+fun DependencyHandler.coreModels() { implementation(project(":app-core:core_models")) }
 // <------------------------ Project Modules ------------------------>
