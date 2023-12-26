@@ -1,4 +1,4 @@
-package com.istudio.feature_camera.presentation.ui
+package com.istudio.feature_record_video.presentation.ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -13,9 +13,9 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 
 @Composable
-fun ScreenCamera(navController: NavHostController) {
+fun RecordVideoScreen(navController: NavHostController) {
 
-    val viewModel: ScreenCameraVm = hiltViewModel()
+    val viewModel: RecordVideoVm = hiltViewModel()
 
     Column(
         modifier = Modifier.fillMaxSize(),

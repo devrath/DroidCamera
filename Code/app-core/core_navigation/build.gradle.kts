@@ -10,4 +10,9 @@ android {
     kotlinOptions { ProjectConfig.jvmTarget }
 }
 
-dependencies { coreDependencies()}
+dependencies {
+    coreDependencies()
+
+    featureCaptureImage()
+    featureRecordVideo()
+}
