@@ -179,6 +179,7 @@ fun DependencyHandler.compose() {
     implementation(Dependencies.navigationCompose)
     implementation(Dependencies.lifecycleRuntimeCompose)
     implementation(Dependencies.materialCompose)
+    implementation(Dependencies.hiltNavigationCompose)
     debugImplementation(Dependencies.composeUiToolingPreview)
 }
 // <---> Unit Testing Dependencies <---------------->
