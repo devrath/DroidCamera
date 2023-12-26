@@ -1,4 +1,4 @@
-<h1 align="center">𝙳𝚛𝚘𝚒𝚍𝙲𝚊𝚖𝚎𝚛𝚊</h1>
+<h1 align="center">𝚂𝚗𝚊𝚙𝚅𝚒𝚜𝚒𝚘𝚗</h1>
 
 ![1_GZmhCFMCrG4L_mOtwSb0zA](https://github.com/devrath/DroidCamera/assets/1456191/98fce058-3c1a-430a-b4c7-699262b96e8c)
 
