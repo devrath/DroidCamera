@@ -60,4 +60,5 @@ dependencies {
     coreUi()
     coreCommon()
     coreModels()
+    coreNavigation()
 }

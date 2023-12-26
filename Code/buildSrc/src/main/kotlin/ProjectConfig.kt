@@ -17,6 +17,7 @@ object ProjectConfig {
     const val coreUi = "com.istudio.core_ui"
     const val coreModels = "com.istudio.core_models"
     const val coreCommon = "com.istudio.core_common"
+    const val coreNavigation = "com.istudio.core_navigation"
     const val featureCamera = "com.istudio.feature_capture_image"
     const val featureRecordVideo = "com.istudio.feature_record_video"
 

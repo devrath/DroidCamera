@@ -258,4 +258,5 @@ fun DependencyHandler.featureRecordVideo() { implementation(project(":app-featur
 fun DependencyHandler.coreUi() { implementation(project(":app-core:core_ui")) }
 fun DependencyHandler.coreCommon() { implementation(project(":app-core:core_common")) }
 fun DependencyHandler.coreModels() { implementation(project(":app-core:core_models")) }
+fun DependencyHandler.coreNavigation() { implementation(project(":app-core:core_navigation")) }
 // <------------------------ Project Modules ------------------------>
