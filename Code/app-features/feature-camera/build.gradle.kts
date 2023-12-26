@@ -18,5 +18,8 @@ android {
 }
 
 dependencies {
-    currencyConverterFeature()
+    coreDependencies()
+    compose()
+    unitTesting()
+    instrumentationTesting()
 }

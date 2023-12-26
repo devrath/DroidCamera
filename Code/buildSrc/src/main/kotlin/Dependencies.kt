@@ -1,5 +1,3 @@
-import Dependencies.coreSplash
-import Dependencies.hiltNavigationCompose
 import org.gradle.api.artifacts.dsl.DependencyHandler
 import org.gradle.kotlin.dsl.project
 
@@ -235,116 +233,28 @@ fun DependencyHandler.hilt() {
 
 
 // <----------------- Root Module Dependencies ----------------------->
-// <-----> App Dependencies <----->
 fun DependencyHandler.appModuleDependencies() {
     coreDependencies()
+    implementation(Dependencies.coreSplash)
     compose()
     unitTesting()
     instrumentationTesting()
-    // <-----------> App Module Specific  <----------->
-    implementation(hiltNavigationCompose)
-    implementation(coreSplash)
-    // <-----------> App Module Specific  <----------->
-    // --> Single modules
     common()
 }
-// <-----> Core Dependencies <----->
-fun DependencyHandler.coreModuleDependencies() {
-    coreDependencies()
-    unitTesting()
-    room()
-    retrofit()
-}
-// <-----> Data Dependencies <----->
-fun DependencyHandler.dataModuleDependencies() {
-    coreDependencies()
-    unitTesting()
-    room()
-    retrofit()
-    // --> Single modules
-    common()
-}
-// <-----> Ui Dependencies <------->
-fun DependencyHandler.uiModuleDependencies() {
-    coreDependencies()
-    instrumentationTesting()
-    unitTesting()
-    compose()
-    implementation(coreSplash)
-}
-// <----> Feature Dependencies <---->
-fun DependencyHandler.featureDependencies() {
-    coreDependencies()
-    instrumentationTesting()
-    unitTesting()
-    compose()
-    implementation(Dependencies.hiltNavigationCompose)
-    // --> Single modules
-    common()
-}
-// <----------------- Root Module Dependencies ----------------------->
 
-// <----------------- App-Core Module Dependencies ------------------->
-// <----> Network Module Dependencies <---->
-fun DependencyHandler.network() {
-    coreDependencies()
-    unitTesting()
-    retrofit()
-    // --> Single modules
-    common()
-}
-// <----> Database Module Dependencies <---->
-fun DependencyHandler.database() {
-    coreDependencies()
-    room()
-    unitTesting()
-    instrumentationTesting()
-}
-// <---> Preferences Module Dependencies <--->
-fun DependencyHandler.preferences() {
-    coreDependencies()
-    unitTesting()
-    preferencesDataStore()
-    // --> Single modules
-    common()
-}
-// <---> Common Module Dependencies <--->
 fun DependencyHandler.common() {
     coreDependencies()
-    retrofit()
-    room()
     jUnit5()
     // --> Testing
     unitTesting()
     instrumentationTesting()
 }
-// <---> Models Module Dependencies <--->
-fun DependencyHandler.models() {
-    coreDependencies()
-    retrofit()
-    room()
-}
 
-fun DependencyHandler.Fakes() {
-    coreDependencies()
-    retrofit()
-    room()
-}
-// <----------------- App-Core Module Dependencies ------------------->
-
-// <----------------- Feature Module Dependencies ------------------->
-// <---> CurrencyConversion Feature Module Dependencies <--->
-fun DependencyHandler.currencyConverterFeature() {
-    featureDependencies()
-    retrofit()
-}
-// <---> CurrencyResult Feature Module Dependencies <--->
-fun DependencyHandler.currencyResultFeature() {
-    featureDependencies()
-}
-// <----------------- Feature Module Dependencies ------------------->
 
 
 // <------------------------ Project Modules ------------------------>
 fun DependencyHandler.featureCamera() { implementation(project(":app-features:feature-camera")) }
+fun DependencyHandler.coreUi() { implementation(project(":app-core:core-ui")) }
+fun DependencyHandler.coreCommon() { implementation(project(":app-core:core-common")) }
+fun DependencyHandler.coreModels() { implementation(project(":app-core:core-models")) }
 // <------------------------ Project Modules ------------------------>
