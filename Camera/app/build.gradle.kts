@@ -76,4 +76,8 @@ dependencies {
     // Determine whether you are on phone, tablet etc to determine the right UI layout
     implementation("androidx.compose.material3:material3-window-size-class:1.2.0-alpha09")
     // <---------------------- MATERIAL-3 ---------------------->
+
+    // Splash API
+    implementation("androidx.core:core-splashscreen:1.0.0-alpha02")
+
 }
