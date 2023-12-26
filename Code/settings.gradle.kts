@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Camera"
+rootProject.name = "SnapVision"
 include(":app")

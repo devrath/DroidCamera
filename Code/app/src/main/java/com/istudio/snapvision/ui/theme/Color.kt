@@ -1,4 +1,4 @@
-package com.istudio.camera.ui.theme
+package com.istudio.snapvision.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
