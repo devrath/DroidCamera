@@ -1,4 +1,4 @@
-package com.istudio.snapvision.presentation.view.utils
+package com.istudio.snapvision.presentation.view.view_utils
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
