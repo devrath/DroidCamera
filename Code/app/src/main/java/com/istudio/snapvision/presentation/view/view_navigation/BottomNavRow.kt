@@ -1,5 +1,6 @@
 package com.istudio.snapvision.presentation.view.view_navigation
 
+import androidx.compose.foundation.layout.height
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.PhotoCamera
 import androidx.compose.material.icons.filled.Videocam
@@ -28,6 +29,8 @@ fun BottomNavRow(
     )
 
     BottomAppBar(
+        modifier = Modifier
+            .height(60.dp),
         tonalElevation = 3.dp
     ) {
         val weight = 1f / items.size
