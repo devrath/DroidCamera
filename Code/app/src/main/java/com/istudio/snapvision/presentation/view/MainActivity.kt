@@ -149,7 +149,7 @@ class MainActivity : ComponentActivity() {
     /** ************************************* PREVIEW  ***************************************/
     @Preview(showBackground = true)
     @Composable
-    fun GreetingPreview() {
+    fun MainPreview() {
         initOnCreate()
     }
     /** ************************************* PREVIEW  ***************************************/
