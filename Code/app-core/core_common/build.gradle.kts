@@ -10,4 +10,7 @@ android {
     kotlinOptions { ProjectConfig.jvmTarget }
 }
 
-dependencies { coreDependencies()}
+dependencies {
+    coreDependencies()
+    implementation(Dependencies.gson)
+}
