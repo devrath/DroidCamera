@@ -27,17 +27,17 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         installSplashScreen()
-        setContent { initOnCreate() }
+        setContent { InitOnCreate() }
     }
 
     /** ************************************* Init Methods  ***************************************/
     /** <*******> Init OnCreate <******> **/
     @Composable
-    private fun initOnCreate() {
+    private fun InitOnCreate() {
         // View model reference
         val viewModel: MainVm = hiltViewModel()
         // View state reference from view model
-        val state = viewModel.viewState
+        //val state = viewModel.viewState
 
         // <!--------------------- CONTROLLERS ------------------------>
         // Nav controller
@@ -76,7 +76,7 @@ class MainActivity : ComponentActivity() {
     @Preview(showBackground = true)
     @Composable
     fun MainPreview() {
-        initOnCreate()
+        InitOnCreate()
     }
     /** ************************************* PREVIEW  ***************************************/
 

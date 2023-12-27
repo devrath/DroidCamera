@@ -31,7 +31,7 @@ class MainVm @Inject constructor( ): BaseViewModel<Unit>() {
     /** <************> UI Action is invoked from composable <************> **/
 
     fun onEvent(event: AppScreenViewEvent) {
-        viewModelScope.launch {
+        uiScope.launch {
             when (event) {
                 is AppScreenViewEvent.CheckConnectivity -> { }
                 is AppScreenViewEvent.LoadingState -> { }
