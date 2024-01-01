@@ -11,19 +11,12 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableIntStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.rememberNavController
 import com.istudio.core_navigation.NavGraph
-import com.istudio.snapvision.presentation.view.view_navigation.BottomNavItem
-import com.istudio.snapvision.presentation.view.view_navigation.BottomNavRow
-import com.istudio.snapvision.presentation.view.view_navigation.BottomNavigationController
 import com.istudio.snapvision.presentation.view.view_utils.LaunchOncePerSession
 import com.istudio.snapvision.presentation.view.view_utils.handleConfigurationEffect
 import com.istudio.snapvision.ui.theme.CameraTheme
@@ -57,13 +50,6 @@ class MainActivity : ComponentActivity() {
         val navController = rememberNavController()
         // <!--------------------- CONTROLLERS ------------------------>
 
-        // <!------------- Bottom Navigation Controller --------------->
-        // Keeps track of current selected position of bottom tab
-        var bottomNavPosition by remember { mutableIntStateOf(BottomNavItem.initialPosition) }
-        // Controller will be triggered position of hte tab is updated
-        BottomNavigationController(bottomNavPosition, navController)
-        // <!------------- Bottom Navigation Controller --------------->
-
         CameraTheme(darkTheme = viewModel.currentTheme.value) {
             // A surface container using the 'background' color from the theme
             Surface(
@@ -73,7 +59,7 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     modifier = Modifier.fillMaxSize()
                         .background(MaterialTheme.colorScheme.background),
-                    bottomBar = { BottomNavRow{ bottomNavPosition = it } }
+                    bottomBar = { }
                 ) { innerPaddingModifier ->
                     NavGraph(
                         navController = navController,
