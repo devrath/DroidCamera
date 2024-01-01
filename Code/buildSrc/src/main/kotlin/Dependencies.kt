@@ -254,8 +254,8 @@ fun DependencyHandler.common() {
 
 
 // <------------------------ Project Modules ------------------------>
-fun DependencyHandler.featureCaptureImage() { implementation(project(":app-features:feature_capture_image")) }
-fun DependencyHandler.featureRecordVideo() { implementation(project(":app-features:feature_record_video")) }
+fun DependencyHandler.featureCaptureImage() { implementation(project(":app-features:feature_camera")) }
+fun DependencyHandler.featureRecordVideo() { implementation(project(":app-features:feature_gallery")) }
 fun DependencyHandler.coreUi() { implementation(project(":app-core:core_ui")) }
 fun DependencyHandler.coreCommon() { implementation(project(":app-core:core_common")) }
 fun DependencyHandler.coreModels() { implementation(project(":app-core:core_models")) }
