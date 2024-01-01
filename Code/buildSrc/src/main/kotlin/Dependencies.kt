@@ -124,8 +124,16 @@ object Dependencies {
     // <-------------------> AssertK Dependencies <---------------------->
 
 
-}
+    // <-------------------> CameraX Dependencies <---------------------->
+    const val cameraCore = "androidx.camera:camera-core:${Versions.cameraxVersion}"
+    const val cameraCamera2 = "androidx.camera:camera-camera2:${Versions.cameraxVersion}"
+    const val cameraLifecycle = "androidx.camera:camera-lifecycle:${Versions.cameraxVersion}"
+    const val cameraVideo = "androidx.camera:camera-video:${Versions.cameraxVersion}"
+    const val cameraView = "androidx.camera:camera-view:${Versions.cameraxVersion}"
+    const val cameraExtensions = "androidx.camera:camera-extensions:${Versions.cameraxVersion}"
+    // <-------------------> CameraX Dependencies <---------------------->
 
+}
 // <----------- Individual Library group Dependencies ---------------->
 // <--------> Core Dependencies <---------------->
 fun DependencyHandler.coreDependencies() {
@@ -228,6 +236,15 @@ fun DependencyHandler.instrumentationTesting() {
 fun DependencyHandler.hilt() {
     implementation(Dependencies.hiltAndroid)
     kapt(Dependencies.hiltCompiler)
+}
+
+fun DependencyHandler.cameraDependencies() {
+    implementation(Dependencies.cameraCore)
+    implementation(Dependencies.cameraCamera2)
+    implementation(Dependencies.cameraLifecycle)
+    implementation(Dependencies.cameraVideo)
+    implementation(Dependencies.cameraView)
+    implementation(Dependencies.cameraExtensions)
 }
 // <----------- Individual Library group Dependencies ---------------->
 

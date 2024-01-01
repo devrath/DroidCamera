@@ -17,6 +17,7 @@ android {
 dependencies {
     coreDependencies()
     compose()
+    cameraDependencies()
     unitTesting()
     instrumentationTesting()
 }
