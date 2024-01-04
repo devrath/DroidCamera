@@ -1,0 +1,5 @@
+<resources>
+    <string name="str_photo">Photo</string>
+    <string name="str_video">Video</string>
+    <string name="str_scanner">Scanner</string>
+</resources>
