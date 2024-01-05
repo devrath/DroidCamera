@@ -40,7 +40,7 @@ fun ScrollableTabs(
     val itemHorizontalPadding = 26.dp
     val backgroundShapeWidth = 62.dp
     val screenHalfWidth = LocalConfiguration.current.screenWidthDp.div(2).dp
-    val horizontalContentPadding = screenHalfWidth.minus(itemHorizontalPadding.div(2))
+    val horizontalContentPadding = screenHalfWidth.minus(itemHorizontalPadding.div(2))-18.dp
 
     val coroutineScope = rememberCoroutineScope()
     val lazyListState = rememberLazyListState()
