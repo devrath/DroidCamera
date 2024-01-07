@@ -15,4 +15,5 @@ dependencies {
     compose()
     FEATURE_CAPTURE_IMAGE
     FEATURE_GALLERY
+    FEATURE_ONBOARDING
 }

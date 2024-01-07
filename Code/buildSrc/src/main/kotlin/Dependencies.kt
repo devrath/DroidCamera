@@ -267,10 +267,6 @@ fun DependencyHandler.testing(){
 }
 
 // <------------------------ Project Modules ------------------------>
-val DependencyHandler.FEATURE_CAPTURE_IMAGE
-    get() = implementation(project(mapOf("path" to ":app-features:feature_camera")))
-val DependencyHandler.FEATURE_GALLERY
-    get() = implementation(project(mapOf("path" to ":app-features:feature_gallery")))
 val DependencyHandler.CORE_UI
     get() = implementation(project(mapOf("path" to ":app-core:core_ui")))
 val DependencyHandler.CORE_COMMON
@@ -279,4 +275,12 @@ val DependencyHandler.CORE_MODELS
     get() = implementation(project(mapOf("path" to ":app-core:core_models")))
 val DependencyHandler.CORE_NAVIGATION
     get() = implementation(project(mapOf("path" to ":app-core:core_navigation")))
+
+
+val DependencyHandler.FEATURE_CAPTURE_IMAGE
+    get() = implementation(project(mapOf("path" to ":app-features:feature_camera")))
+val DependencyHandler.FEATURE_GALLERY
+    get() = implementation(project(mapOf("path" to ":app-features:feature_gallery")))
+val DependencyHandler.FEATURE_ONBOARDING
+    get() = implementation(project(mapOf("path" to ":app-features:feature-onboarding")))
 // <------------------------ Project Modules ------------------------>
