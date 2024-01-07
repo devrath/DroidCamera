@@ -4,7 +4,6 @@ plugins {
 
 android {
     namespace = ProjectConfig.featureOnBoarding
-    kotlinOptions { ProjectConfig.jvmTarget }
 }
 
 dependencies {

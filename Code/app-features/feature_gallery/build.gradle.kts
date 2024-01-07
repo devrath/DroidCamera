@@ -4,7 +4,6 @@ plugins {
 
 android {
     namespace = ProjectConfig.featureRecordVideo
-    kotlinOptions { ProjectConfig.jvmTarget }
 }
 
 dependencies {

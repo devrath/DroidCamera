@@ -4,7 +4,6 @@ plugins {
 
 android {
     namespace = ProjectConfig.featureCamera
-    kotlinOptions { ProjectConfig.jvmTarget }
 }
 
 dependencies {
