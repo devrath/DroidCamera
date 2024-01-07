@@ -253,6 +253,8 @@ fun DependencyHandler.appModuleDependencies() {
     compose()
     common()
     implementation(Dependencies.coreSplash)
+    // ALl project Modules
+    allModules()
 }
 
 fun DependencyHandler.common() {
@@ -267,6 +269,14 @@ fun DependencyHandler.testing(){
 }
 
 // <------------------------ Project Modules ------------------------>
+fun DependencyHandler.allModules() {
+    CORE_UI
+    CORE_COMMON
+    CORE_MODELS
+    CORE_NAVIGATION
+    CORE_PREFERENCES
+}
+
 val DependencyHandler.CORE_UI
     get() = implementation(project(mapOf("path" to ":app-core:core_ui")))
 val DependencyHandler.CORE_COMMON
@@ -275,6 +285,8 @@ val DependencyHandler.CORE_MODELS
     get() = implementation(project(mapOf("path" to ":app-core:core_models")))
 val DependencyHandler.CORE_NAVIGATION
     get() = implementation(project(mapOf("path" to ":app-core:core_navigation")))
+val DependencyHandler.CORE_PREFERENCES
+    get() = implementation(project(mapOf("path" to ":app-core:core-preferences")))
 
 
 val DependencyHandler.FEATURE_CAPTURE_IMAGE
