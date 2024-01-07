@@ -1,10 +1,6 @@
 plugins {
-    `android-library`
-    `kotlin-android`
-    id(Dependencies.junit5ProjectLevel) version Versions.junit5ProjectLevel
+    id("plugins.android-common")
 }
-
-apply<plugins.FeaturesGradlePlugin>()
 
 android {
     namespace = ProjectConfig.featureCamera
@@ -12,9 +8,7 @@ android {
 }
 
 dependencies {
-    coreDependencies()
-    compose()
-    testing()
+    featureBase()
     // Feature specific dependencies
     cameraDependencies()
 }
