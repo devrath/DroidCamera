@@ -8,4 +8,5 @@ android {
 
 dependencies {
     featureBase()
+    CORE_PREFERENCES
 }
