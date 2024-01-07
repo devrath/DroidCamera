@@ -6,4 +6,8 @@ android {
     namespace = ProjectConfig.corePreferences
 }
 
-dependencies { coreDependencies() }
+dependencies {
+    coreDependencies()
+    // Preferences
+    preferencesDataStore()
+}
