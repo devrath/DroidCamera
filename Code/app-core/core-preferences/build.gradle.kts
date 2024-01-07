@@ -1,5 +1,5 @@
 plugins {
-    id("plugins.android-common")
+    id(ProjectConfig.commonPluginTag)
 }
 
 android {

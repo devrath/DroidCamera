@@ -22,9 +22,10 @@ object ProjectConfig {
     const val featureCamera = "com.istudio.feature_camera"
     const val featureRecordVideo = "com.istudio.feature_record_video"
     const val featureOnBoarding = "com.istudio.feature_onboarding"
+    // <---------> Namespaces <--------->
 
-
-    //const val coreUi = "com.istudio.core_ui"
+    // <---------> Namespaces <--------->
+    const val commonPluginTag = "plugins.android-common"
     // <---------> Namespaces <--------->
 
     // <---------> Test Instrumentaiton <--------->
