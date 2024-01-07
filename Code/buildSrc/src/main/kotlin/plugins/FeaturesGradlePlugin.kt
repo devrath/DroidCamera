@@ -37,6 +37,7 @@ class FeaturesGradlePlugin: Plugin<Project> {
             }
 
             buildFeatures { compose = true }
+            testOptions { unitTests.isReturnDefaultValues = true }
             composeOptions { kotlinCompilerExtensionVersion = Versions.composeCompiler }
         }
     }

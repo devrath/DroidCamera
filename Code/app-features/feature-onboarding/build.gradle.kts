@@ -11,9 +11,6 @@ apply<plugins.FeaturesGradlePlugin>()
 android {
     namespace = ProjectConfig.featureOnBoarding
     kotlinOptions { ProjectConfig.jvmTarget }
-    testOptions {
-        unitTests.isReturnDefaultValues = true
-    }
 }
 
 dependencies {
