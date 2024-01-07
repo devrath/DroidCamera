@@ -250,22 +250,21 @@ fun DependencyHandler.cameraDependencies() {
 // <----------------- Root Module Dependencies ----------------------->
 fun DependencyHandler.appModuleDependencies() {
     coreDependencies()
-    implementation(Dependencies.coreSplash)
     compose()
-    unitTesting()
-    instrumentationTesting()
     common()
+    implementation(Dependencies.coreSplash)
 }
 
 fun DependencyHandler.common() {
     coreDependencies()
-    jUnit5()
     // --> Testing
+    testing()
+}
+
+fun DependencyHandler.testing(){
     unitTesting()
     instrumentationTesting()
 }
-
-
 
 // <------------------------ Project Modules ------------------------>
 val DependencyHandler.FEATURE_CAPTURE_IMAGE

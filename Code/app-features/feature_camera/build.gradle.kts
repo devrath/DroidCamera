@@ -17,7 +17,7 @@ android {
 dependencies {
     coreDependencies()
     compose()
+    testing()
+    // Feature specific dependencies
     cameraDependencies()
-    unitTesting()
-    instrumentationTesting()
 }

@@ -17,6 +17,5 @@ android {
 dependencies {
     coreDependencies()
     compose()
-    unitTesting()
-    instrumentationTesting()
+    testing()
 }
