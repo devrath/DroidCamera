@@ -11,4 +11,5 @@ dependencies {
     lotteDependency()
     CORE_PREFERENCES
     CORE_UI
+    CORE_COMMON
 }
