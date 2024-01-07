@@ -22,10 +22,20 @@ android {
             useSupportLibrary = true
         }
     }
-
     buildTypes {
-        release {
+        getByName("debug") {
+            isDebuggable = true
             isMinifyEnabled = false
+            initWith(getByName("debug"))
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+        getByName("release") {
+            isDebuggable = false
+            isMinifyEnabled = true
+            initWith(getByName("release"))
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
