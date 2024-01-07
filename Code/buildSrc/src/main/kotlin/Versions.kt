@@ -56,4 +56,5 @@ object Versions {
     const val assertK = "0.26.1"
     const val mockWebServer = "4.11.0"
     const val cameraxVersion = "1.3.0-rc01"
+    const val lotteAndroidVersion = "5.2.0"
 }

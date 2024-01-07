@@ -130,6 +130,10 @@ object Dependencies {
     const val cameraExtensions = "androidx.camera:camera-extensions:${Versions.cameraxVersion}"
     // <-------------------> CameraX Dependencies <---------------------->
 
+    // <-------------------> Lotte Dependencies <---------------------->
+    const val lotteDependency = "com.airbnb.android:lottie-compose:${Versions.lotteAndroidVersion}"
+    // <-------------------> Lotte Dependencies <---------------------->
+
 }
 // <----------- Individual Library group Dependencies ---------------->
 // <--------> Core Dependencies <---------------->
@@ -242,6 +246,10 @@ fun DependencyHandler.cameraDependencies() {
     implementation(Dependencies.cameraVideo)
     implementation(Dependencies.cameraView)
     implementation(Dependencies.cameraExtensions)
+}
+
+fun DependencyHandler.lotteDependency(){
+    implementation(Dependencies.lotteDependency)
 }
 // <----------- Individual Library group Dependencies ---------------->
 

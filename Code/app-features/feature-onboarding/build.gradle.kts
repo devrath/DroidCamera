@@ -8,5 +8,7 @@ android {
 
 dependencies {
     featureBase()
+    lotteDependency()
     CORE_PREFERENCES
+    CORE_UI
 }
