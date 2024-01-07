@@ -24,9 +24,9 @@ object ProjectConfig {
     const val featureOnBoarding = "com.istudio.feature_onboarding"
     // <---------> Namespaces <--------->
 
-    // <---------> Namespaces <--------->
-    const val commonPluginTag = "plugins.android-common"
-    // <---------> Namespaces <--------->
+    // <---------> Tags <--------->
+    const val commonPluginTag = "plugins.features.android-common"
+    // <---------> Tags <--------->
 
     // <---------> Test Instrumentaiton <--------->
     const val testInstrumentationRunner_AndroidJUnitRunner = "androidx.test.runner.AndroidJUnitRunner"

@@ -1,4 +1,4 @@
-package plugins
+package plugins.features
 
 import ProjectConfig
 import Versions
