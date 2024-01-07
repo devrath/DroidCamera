@@ -1,5 +1,3 @@
 <resources>
-    <string name="str_capture_image">Capture Image</string>
-    <string name="str_record_video">Record Video</string>
-
+    <string name="app_name">SnapVision</string>
 </resources>
