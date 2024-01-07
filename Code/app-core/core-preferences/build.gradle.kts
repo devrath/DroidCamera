@@ -1,13 +1,9 @@
 plugins {
-    `android-library`
-    `kotlin-android`
+    id("plugins.android-common")
 }
-
-apply<plugins.FeaturesGradlePlugin>()
 
 android {
     namespace = ProjectConfig.corePreferences
-    kotlinOptions { ProjectConfig.jvmTarget }
 }
 
 dependencies { coreDependencies() }
