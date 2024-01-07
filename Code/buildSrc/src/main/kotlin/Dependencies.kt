@@ -277,4 +277,7 @@ fun DependencyHandler.coreUi() { implementation(project(":app-core:core_ui")) }
 fun DependencyHandler.coreCommon() { implementation(project(":app-core:core_common")) }
 fun DependencyHandler.coreModels() { implementation(project(":app-core:core_models")) }
 fun DependencyHandler.coreNavigation() { implementation(project(":app-core:core_navigation")) }
+
+val DependencyHandler.CORE_NAVIGATION
+    get() = implementation(project(mapOf("path" to ":app-core:core_navigation")))
 // <------------------------ Project Modules ------------------------>
