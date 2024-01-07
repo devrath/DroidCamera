@@ -1,4 +1,4 @@
-package com.istudio.snapvision.ui.theme
+package com.istudio.core_ui.theme
 
 import android.app.Activity
 import android.os.Build

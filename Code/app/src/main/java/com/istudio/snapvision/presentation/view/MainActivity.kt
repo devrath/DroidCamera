@@ -19,7 +19,7 @@ import androidx.navigation.compose.rememberNavController
 import com.istudio.core_navigation.NavGraph
 import com.istudio.snapvision.presentation.view.view_utils.LaunchOncePerSession
 import com.istudio.snapvision.presentation.view.view_utils.handleConfigurationEffect
-import com.istudio.snapvision.ui.theme.CameraTheme
+import com.istudio.core_ui.theme.CameraTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 
