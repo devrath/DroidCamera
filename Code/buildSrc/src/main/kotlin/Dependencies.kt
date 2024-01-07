@@ -2,9 +2,6 @@ import org.gradle.api.artifacts.dsl.DependencyHandler
 import org.gradle.kotlin.dsl.project
 
 object Dependencies {
-    // Specific module links
-    const val apiFactoryModuleLink = ":app-factories:api-factory"
-    const val mockFactoryModuleLink = ":app-factories:fake-factory"
 
     // <-------------> Top level plugin Dependencies <-------------------->
     const val hiltProjectLevel = "com.google.dagger.hilt.android"
@@ -271,13 +268,16 @@ fun DependencyHandler.common() {
 
 
 // <------------------------ Project Modules ------------------------>
-fun DependencyHandler.featureCaptureImage() { implementation(project(":app-features:feature_camera")) }
-fun DependencyHandler.featureRecordVideo() { implementation(project(":app-features:feature_gallery")) }
-fun DependencyHandler.coreUi() { implementation(project(":app-core:core_ui")) }
-fun DependencyHandler.coreCommon() { implementation(project(":app-core:core_common")) }
-fun DependencyHandler.coreModels() { implementation(project(":app-core:core_models")) }
-fun DependencyHandler.coreNavigation() { implementation(project(":app-core:core_navigation")) }
-
+val DependencyHandler.FEATURE_CAPTURE_IMAGE
+    get() = implementation(project(mapOf("path" to ":app-features:feature_camera")))
+val DependencyHandler.FEATURE_GALLERY
+    get() = implementation(project(mapOf("path" to ":app-features:feature_gallery")))
+val DependencyHandler.CORE_UI
+    get() = implementation(project(mapOf("path" to ":app-core:core_ui")))
+val DependencyHandler.CORE_COMMON
+    get() = implementation(project(mapOf("path" to ":app-core:core_common")))
+val DependencyHandler.CORE_MODELS
+    get() = implementation(project(mapOf("path" to ":app-core:core_models")))
 val DependencyHandler.CORE_NAVIGATION
     get() = implementation(project(mapOf("path" to ":app-core:core_navigation")))
 // <------------------------ Project Modules ------------------------>

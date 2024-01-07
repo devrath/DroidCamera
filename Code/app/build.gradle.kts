@@ -55,8 +55,8 @@ android {
 dependencies {
     appModuleDependencies()
 
-    coreUi()
-    coreCommon()
-    coreModels()
+    CORE_UI
+    CORE_COMMON
+    CORE_MODELS
     CORE_NAVIGATION
 }

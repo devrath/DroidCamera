@@ -13,6 +13,6 @@ android {
 dependencies {
     coreDependencies()
     compose()
-    featureCaptureImage()
-    featureRecordVideo()
+    FEATURE_CAPTURE_IMAGE
+    FEATURE_GALLERY
 }
