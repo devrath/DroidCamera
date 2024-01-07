@@ -48,6 +48,7 @@ object Dependencies {
     const val navigationCompose = "androidx.navigation:navigation-compose:${Versions.navigationCompose}"
     const val lifecycleRuntimeCompose = "androidx.lifecycle:lifecycle-runtime-compose:${Versions.lifecycleRuntimeCompose}"
     const val materialCompose = "androidx.compose.material:material:${Versions.materialCompose}"
+    const val downloadableGoogleFonts = "androidx.compose.ui:ui-text-google-fonts:${Versions.downloadableGoogleFonts}"
     // <---------------------> Compose Dependencies <--------------------->
 
     // <---------------------> Hilt Dependencies <------------------------>

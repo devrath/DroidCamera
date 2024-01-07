@@ -9,4 +9,5 @@ android {
 dependencies {
     coreDependencies()
     compose()
+    implementation(Dependencies.downloadableGoogleFonts)
 }

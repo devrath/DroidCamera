@@ -13,6 +13,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import com.istudio.core_ui.theme.fontFamily
 
 @Composable
 fun AppButton(
@@ -34,6 +35,10 @@ fun AppButton(
         ),
         enabled = isEnabled
     ) {
-        Text(text = buttonText, style = style)
+        Text(
+            text = buttonText,
+            style = style,
+            fontFamily = fontFamily
+        )
     }
 }
