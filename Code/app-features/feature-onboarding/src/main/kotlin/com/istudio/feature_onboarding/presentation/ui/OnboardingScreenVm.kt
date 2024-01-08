@@ -18,11 +18,15 @@ class OnboardingScreenVm @Inject constructor(
     private val useCaseController : OnboardingUseCaseController
 ) : BaseVM<OnBoardingViewState, OnBoardingViewEvent>() {
 
+    companion object {
+        val permissionsToRequest = arrayOf(Manifest.permission.CAMERA)
+    }
+
     init {
 
     }
 
-    val permissionsToRequest = arrayOf(Manifest.permission.CAMERA)
+
     val visiblePermissionDialogQueue = mutableStateListOf<String>()
 
     override fun onTriggerEvent(event: OnBoardingViewEvent) {

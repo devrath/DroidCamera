@@ -35,7 +35,7 @@ fun OnboardingScreen(navController: NavHostController) {
 
     val viewModel: OnboardingScreenVm = hiltViewModel()
     val dialogQueue = viewModel.visiblePermissionDialogQueue
-    val permissionsToRequest = viewModel.permissionsToRequest
+    val permissionsToRequest = OnboardingScreenVm.permissionsToRequest
     val activity = LocalContext.current as Activity
 
     val multiplePermissionResultLauncher = rememberLauncherForActivityResult(
