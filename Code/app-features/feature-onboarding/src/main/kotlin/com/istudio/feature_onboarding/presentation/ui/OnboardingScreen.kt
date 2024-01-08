@@ -37,7 +37,7 @@ fun OnboardingScreen(navController: NavHostController) {
     val dialogQueue = viewModel.visiblePermissionDialogQueue
     val permissionsToRequest = viewModel.permissionsToRequest
     val activity = LocalContext.current as Activity
-    
+
     val multiplePermissionResultLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.RequestMultiplePermissions(),
         onResult = { perms ->
