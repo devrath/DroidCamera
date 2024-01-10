@@ -4,6 +4,12 @@
 
 📷 𝙴𝚡𝚙𝚕𝚘𝚛𝚎 𝙰𝚗𝚍𝚛𝚘𝚒𝚍 𝚌𝚊𝚖𝚎𝚛𝚊 𝚏𝚎𝚊𝚝𝚞𝚛𝚎𝚜: 𝚌𝚊𝚙𝚝𝚞𝚛𝚎 𝚙𝚑𝚘𝚝𝚘𝚜, 𝚛𝚎𝚌𝚘𝚛𝚍 𝚟𝚒𝚍𝚎𝚘𝚜.
 
+<p align="center">
+ <img alt="material" src="https://custom-icon-badges.demolab.com/badge/material%20you-palegreen?style=for-the-badge&logoColor=black&logo=material-you"/></a>
+  <img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-a503fc?logo=kotlin&logoColor=white&style=for-the-badge"/></a>
+  <img alt="Jetpack Compose" src="https://img.shields.io/static/v1?style=for-the-badge&message=Jetpack+Compose&color=4285F4&logo=Jetpack+Compose&logoColor=FFFFFF&label="/></a> 
+</p>
+
 
 ## **`𝚂𝚞𝚙𝚙𝚘𝚛𝚝`** ☕
 𝙸𝚏 𝚢𝚘𝚞 𝚏𝚎𝚎𝚕 𝚕𝚒𝚔𝚎 𝚜𝚞𝚙𝚙𝚘𝚛𝚝 𝚖𝚎 𝚊 𝚌𝚘𝚏𝚏𝚎𝚎 𝚏𝚘𝚛 𝚖𝚢 𝚎𝚏𝚏𝚘𝚛𝚝𝚜, 𝙸 𝚠𝚘𝚞𝚕𝚍 𝚐𝚛𝚎𝚊𝚝𝚕𝚢 𝚊𝚙𝚙𝚛𝚎𝚌𝚒𝚊𝚝𝚎 𝚒𝚝.</br>
